@@ -120,7 +120,7 @@ body {
 
 }
 
-.div-1, .div-2, .div-3 {
+header, .intro, .div-1, .div-2, .div-3, footer {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #fff;
   line-height: 1.5em;
@@ -134,14 +134,33 @@ body {
   /* flex-wrap: wrap; */
 }
 
-/* p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 15px;
-    height: 300px;
-} */
+header {
+	justify-content: flex-start;
+	padding: 15px auto;
+}
 
+.intro {
+	font-size: 1.5em;
+}
+
+span {
+	color: red;
+	font-weight: 700;
+}
+
+footer {
+	margin: 30px auto;
+	font-size: 1.5em;
+}
+
+a, a:link {
+	text-decoration: none;
+	color: #fff;
+}
+
+a, a:hover {
+	color: red;
+}
 
 
 /* ==========================================================================
@@ -228,12 +247,20 @@ body {
        .div-1, .div-2, .div-3 {
            width: 30%;
            height: 200px;
+           margin-bottom: 50px;
+           
        }
 
        .div-1, .div-2 {
-           border-right: 2px solid #fff;
+           border-right: 1px solid #fff;
            padding-right: 30px;
        }
+       
+       .intro {
+	       margin:15px auto;
+       }
+       
+       
    }
 
 @media print,
